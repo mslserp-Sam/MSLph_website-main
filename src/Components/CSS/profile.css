@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+/* font-family: 'Anton', sans-serif; */
+/* font-family: 'Sedgwick Ave', cursive; */
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.profile{
+    height: auto;
+    width: 100%;
+    background: 
+        linear-gradient(black 0%, transparent),
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/Cloudcover.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+section.profilePageMLBB.top{
+    height: auto;
+    width: 100%;
+    background: 
+        linear-gradient(black 0%, transparent),
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/plasticTexture.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+section.profilePageMLBB.top img#paperScratch01{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.dpMLBBContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 8vw 5%;
+    padding-bottom: 6.5vw;
+}
+.dpMLBBContent.left{
+    height: 100%;
+    width: 35%;
+    position: relative;
+    padding-top: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+.dpMLBBContent.left img#mlbbPlayerShadow{
+    position: absolute;
+    filter: grayscale(10);
+    height: 120vw;
+    top: -70%;
+    left: -80%;
+    opacity: 15%;
+    z-index: 1;
+}
+.dpMLBBContent.left h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25vw;
+    line-height: 10vw;
+    text-align: center;
+    font-style: italic;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    position: absolute;
+    rotate: 90deg;
+    top: 45%;
+    left: -30%;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.profileCardContainer{
+    height: 32vw;
+    width: 23vw;
+    z-index: 10;
+    border-radius: 1.5vw;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    animation:  fade-in-left 2000ms ease;
+}
+.profileCardContainer img#mlbbPLayerRank{
+    position: absolute;
+    height: 25vw;
+    left: -25%;
+    top: -15%;
+}
+
+/* MLBB Ranking */
+
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='Master']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/Master.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='Grand Master']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/GrandMaster.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='Epic']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/Epic.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='Legend']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/Legend.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='Mythic']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/Mythic.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='MythicalHonor']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/MythicalHonor.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='MythicalGlory']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/MythicalGlory.webp');
+}
+.profileCardContainer img#mlbbPLayerRank[mlbbRank='MythicalImmortal']{
+    content: url('../assets/MLBB_Landing_Assets/Rankings/MythicalImmortal.webp');
+}
+
+
+.mlbbPlayerSL{
+    height: 100%;
+    width: 100%;
+    background: url('../assets/MLBB_Landing_Assets/LandingBG01.png') no-repeat center;
+    background-size: cover;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.mlbbPlayerSL h4{
+    position: absolute;
+    right: 7%;
+    top: 4%;
+}
+.mlbbPlayerSL img#mlbbPlayerImg{
+    height: 30vw;
+    position: relative;
+    /* filter: grayscale(10); */
+}
+
+.mlbbPlayerSL img#mlbbPlayerImg[mlbbSilhoutte='Male']{
+ content: url('../assets/MLBB_Landing_Assets/maleSilhoutte.webp');
+}
+.mlbbPlayerSL img#mlbbPlayerImg[mlbbSilhoutte='Female']{
+    content: url('../assets/MLBB_Landing_Assets/femaleSilhoutte.webp');
+}
+.mlbbPlayerSL img#mlbbPlayerImg[mlbbSilhoutte='LGBTQA+']{
+    content: url('../assets/MLBB_Landing_Assets/lgbtqaSilhoutte.webp');
+}
+
+.mlbbPlayerSL img#mlbbMslLogo{
+    position: absolute;
+    height: 5vw;
+    right: 10%;
+    bottom: 6%;
+}
+/* .dpMLBBContent.left span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    position: absolute;
+    bottom: 0;
+}
+.dpMLBBContent.left span h4{
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.dpMLBBContent.left span img#mlbbPlayersBadge{
+    height: 1vw;
+    position: relative;
+    z-index: 5;
+    margin-left: 1%;
+} */
+
+
+
+
+
+
+
+.dpMLBBContent.right{
+    height: 100%;
+    width: 70%;
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    /* padding-top: 2%; */
+}
+.profileNavs{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.profileNavs button{
+    background: none;
+    border: none;
+    margin-right: 5%;
+    opacity: 50%;
+    cursor: pointer;
+    padding: 0.5vw;
+}
+.profileNavs button.active{
+    opacity: 100%;
+    border-bottom: solid 1px white;
+}
+.profileNavs button:hover{
+    opacity: 100%;
+    transition: 600ms ease;
+}
+.dpmcDashboard{
+    height: 95%;
+    width: 100%;
+    padding: 2%;
+    animation:  fade-in-left 1000ms ease;
+}
+.dpmcDashboard div#dpmcPlayerName{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.dpmcDashboard div#dpmcPlayerName h3{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+.dpmcDashboard div#dpmcPlayerName img#mlbbPlayersBadge{
+    height: 2vw;
+    position: relative;
+    z-index: 5;
+    margin-left: 1%;
+}
+
+/* MLBB Verified Badge */
+
+.dpmcDashboard div#dpmcPlayerName img#mlbbPlayersBadge[verified='Admin'],
+.dpmcDashboard div#dpmcPlayerName img#mlbbPlayersBadge[verified='Manager'],
+.dpmcDashboard div#dpmcPlayerName img#mlbbPlayersBadge[verified='Developer']{
+    content: url('../assets/MLBB_Landing_Assets/GoldCheck.webp');
+}
+.dpmcDashboard div#dpmcPlayerName img#mlbbPlayersBadge[verified='Student Leader']{
+    content: url('../assets/MLBB_Landing_Assets/BlueCheck.webp');
+}
+
+
+.dpmcDashboard div#dpmcPlayerSchool{
+    text-align: left;
+}
+
+
+.dpmcDashboard div#dpmcPlayerIGN{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.dpmcDashboard div#dpmcPlayerIGN img{
+    height: 2.3vw;
+    padding-top: 1%;
+    margin-right: 1%;
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerHero1,
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerHero2,
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerHero3{
+    border-radius: 50%;
+}
+.dpmcDashboard div#dpmcPlayerIGN h5{
+    text-transform: capitalize;
+}
+.dpmcDashboard div#dpmcPlayerIGN h5 span{
+    color: gray;
+    opacity: 50%;
+    text-transform: uppercase;
+}
+
+
+
+
+/* MLBB Role */
+
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerRole[mlRole='Exp']{
+    content: url('../assets/MLBB_Landing_Assets/Role/Exp.webp');
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerRole[mlRole='Gold']{
+    content: url('../assets/MLBB_Landing_Assets/Role/Gold.webp');
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerRole[mlRole='Jungle']{
+    content: url('../assets/MLBB_Landing_Assets/Role/Jungle.webp');
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerRole[mlRole='Mid']{
+    content: url('../assets/MLBB_Landing_Assets/Role/Mid.webp');
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerRole[mlRole='Roam']{
+    content: url('../assets/MLBB_Landing_Assets/Role/Roam.webp');
+}
+
+
+
+/* MLBB Player Gender */
+
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerGender[mlGender='Male']{
+    content: url('../assets/MLBB_Landing_Assets/Gender/Male.webp');
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerGender[mlGender='Female']{
+    content: url('../assets/MLBB_Landing_Assets/Gender/Female.webp');
+}
+.dpmcDashboard div#dpmcPlayerIGN img#mlbbPlayerGender[mlGender='LGBTQA+']{
+    content: url('../assets/MLBB_Landing_Assets/Gender/LGBTQA+.webp');
+}
+
+
+
+
+.dpmcProfileAdmin,
+.dpmcProfileMasterlist,
+.dpmcProfileReporting,
+.dpmcProfileSettings{
+    height: 95%;
+    width: 100%;
+    padding: 2%;
+    animation:  fade-in-left 1000ms ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

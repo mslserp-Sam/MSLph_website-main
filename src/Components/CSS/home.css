@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.mlbb{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+section.landingPageMLBB.top{
+    height: 100vh;
+    width: 100%;
+    background: 
+        /* linear-gradient(black 0%, transparent), */
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/LandingBG.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.landingPageMLBB.top img#miyaML{
+    top: -5%;
+    left: -30%;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    animation: fade-in-left 3000ms ease;
+}
+.lpContentTop{
+    height: 100%;
+    width: 100%;
+    padding: 9vw 5%;
+    text-align: right;
+}
+.lpContentTop h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18vw;
+    font-weight: 700;
+    line-height: 13vw;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    position: relative;
+    z-index: 5;
+    animation: fade-in-down 5000ms ease;
+}
+.lpContentTop h4{
+    font-family: 'Kanit', sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 1vw;
+    font-style: italic;
+    position: relative;
+    z-index: 5;
+    animation: fade-in-down 3000ms ease;
+}
+.landingPageMLBB.top img#scratch00{
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    animation: fade-in-up 2000ms ease;
+}
+.lpContentTop1{
+    height: auto;
+    width: 65%;
+    padding: 2% 4%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 50px black;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    border-top-left-radius: 5vw;
+    z-index: 7;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    animation: fade-in-right 3000ms ease;
+}
+.lpContentTop1 span{
+    text-align: center;
+    margin-right: 8%;
+    cursor: pointer;
+}
+.lpContentTop2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    z-index: 7;
+    right: 5%;
+    bottom: 17%;
+}
+.lpContentTop2 a{
+    margin-left: 1%;
+}
+.lpContentTop2 button{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.lpContentTop2 button h6{
+    margin-bottom: 0;
+}
+.lpContentTop2 button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+
+
+
+
+
+section.landingMLBB.mid0{
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.lpContentMid0.definition{
+    height: auto;
+    width: 100%;
+    padding: 15vw 5%;
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lpcm0.left{
+    height: auto;
+    width: 45%;
+    position: relative;
+    z-index: 2;
+}
+.lpcm0.left h5{
+    font-size: 2vw;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Kanit', sans-serif;
+}
+.lpcm0.left h2{
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 4vw;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+}
+.lpcm0.left h4{
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 3vw;
+    font-style: italic;
+    font-family: 'Kanit', sans-serif;
+}
+.lpcm0.left p{
+    margin: 3% 0;
+}
+.lpcm0.left div{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lpcm0.left div span{
+    width: 15%;
+    text-align: center;
+}
+.lpcm0.left div span h2{
+    font-size: 3vw;
+}
+.lpcm0.left div span p{
+    font-size: 0.7vw;
+}
+
+
+.lpcm0.right{
+    height: auto;
+    width: 25%;
+}
+.lpcm0.right img{
+    height: auto;
+    max-width: 100%;
+    color: gray;
+}
+
+.lpcm0.right1{
+    height: 100%;
+    width: 25%;
+    position: relative;
+    padding-top: 20%;
+    text-align: center;
+}
+.lpcm0.right1 img#rogerSkin{
+    bottom: 10%;
+    right: -50%;
+    /* transform: translate(0, 30%); */
+    height: 25vw;
+    position: absolute;
+    z-index: 1;
+}
+.lpcm0.right1 h6{
+    position: relative;
+    z-index: 2;
+}
+.lpcm0.right1 button{
+    margin-top: 5%;
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.lpcm0.right1 button h6{
+    margin-bottom: 0;
+}
+.lpcm0.right1 button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+
+
+
+.lpContentMid0.updates{
+    height: auto;
+    width: 100%;
+    padding: 10vw 8%;
+    padding-bottom: 15vw;
+}
+.lpcUpdatesContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+.lpcuContent.left{
+    height: 27vw;
+    width: 17%;
+    overflow-y: scroll;
+}
+.lpcuContent.left::-webkit-scrollbar {
+    display: none;
+}
+.newsContent{
+    height: auto;
+    width: 100%;
+}
+.newsContent div{
+    height: auto;
+    width: 100%;
+    border-radius: 0.5vw;
+    margin-bottom: 5%;
+    border: solid 1px white;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+.newsContent div:hover{
+    box-shadow: 0 0 20px white;
+    background: #f2c31a;
+    transition: 400ms ease;
+}
+.newsContent div img{
+    height: 8vw;
+    border-radius: 0.5vw;
+}
+.newsContent div span h6{
+    padding: 3% 5%;
+}
+.newsContent div span p{
+    font-size: 0.7vw;
+    padding: 0 5%;
+}
+
+
+
+
+.lpcuContent.right{
+    height: auto;
+    width: 80%;
+}
+.sliderContainer{
+    height: auto;
+    width: 100%;
+    /* padding: 0 2%; */
+}
+.sliderFeat{
+    height: 27vw;
+    width: 100%;
+    border-radius: 2vw;
+}
+.homeSlider{
+    height: 27vw;
+}
+div.awssld.awssld--organic-arrows{
+    height: auto;
+}
+div.awssld__wrapper{
+    height: 27vw;
+    border-radius: 1vw;
+    border: solid 3px gray;
+}
+div.awssld__container {
+    padding-bottom: 0;
+}
+div.awssld__box{
+    height: auto;
+}
+div.awssld__content{
+    height: auto;
+}
+nav.awssld__bullets{
+    visibility: hidden;
+}
+.featContent{
+    position: relative;
+}
+.featContent img{
+    height: 27vw;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+section.landingPageMLBB.mid1{
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.lpContentMid1{
+    height: auto;
+    width: 100%;
+    padding: 3vw 25%;
+    margin-top: 8vw;
+    text-align: center;
+    background: #f2c31a;
+    position: relative;
+}
+.lpContentMid1 h4{
+    font-size: 6vw;
+    line-height: 5vw;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.lpContentMid1 p{
+    margin: 2% 0;
+    position: relative;
+    z-index: 1;
+}
+.lpContentMid1 button{
+    padding: 0.5vw 2vw;
+    background: none;
+    margin: 0 1%;
+    border: solid 2px white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.lpContentMid1 button h6{
+    margin-bottom: 0;
+}
+.lpContentMid1 button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+    background: white;
+}
+.lpContentMid1 button:hover h6{
+    color: #f2c21a;
+    transition: 400ms ease;
+}
+.lpContentMid1 img#fannySkin{
+    bottom: 0;
+    left: -20%;
+    height: 30vw;
+    position: absolute;
+}
+.lpContentMid1 img#hanzoSkin{
+    bottom: 0;
+    right: -16%;
+    height: 30vw;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+section.landingPageMLBB.mid2{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.lpContentMid2{
+    height: auto;
+    width: 100%;
+    padding: 12vw 10%;
+    padding-bottom: 8vw;
+}
+.lpContentMid2 h4{
+    font-size: 4vw;
+    font-weight: 800;
+    line-height: 3.5vw;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+.lpContentMid2 h6{
+    text-align: center;
+}
+.lpcmEvents{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.lpcmEvents div{
+    height: auto;
+    width: 30%;
+    margin: 2%;
+    margin-top: 15%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 2%;
+    border-radius: 2vw;
+    position: relative;
+    opacity: 20%;
+    filter: grayscale(10);
+    cursor: pointer;
+}
+.lpcmEvents div:hover{
+    opacity: 100%;
+    filter: none;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+.lpcmEvents div img{
+    height: 20vw;
+    position: absolute;
+    bottom: 30%;
+    left: -15%;
+}
+.lpcmEvents div:hover img{
+    height: 23vw;
+    left: -27%;
+    transition: 400ms ease;
+}
+.lpcmEvents div h5{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 50%;
+}
+.lpcmEvents div span{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: -53%;
+    border-radius: 1vw;
+    padding: 3% 5%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px white;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    visibility: hidden;
+}
+.lpcmEvents div:hover span{
+    visibility: visible;
+    transition: 400ms ease;
+    animation: fade-in-down 500ms ease;
+}
+.lpcmButtons{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.lpcmButtons a{
+    width: auto;
+    margin: 1%;
+}
+.lpcmButtons button{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.lpcmButtons button h6{
+    margin-bottom: 0;
+}
+.lpcmButtons button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+
+
+
+
+section.landingMLBB.mid3{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.lpContentMid3{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 1%;
+}
+.lpContentMid3 video{
+    /* position: absolute; */
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* filter: grayscale(50);
+    opacity: 10%; */
+}
+section.landingMLBB.mid3 img#scratch01{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+section.landingMLBB.mid3 img#scratch02{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    rotate: 180deg;
+    bottom: 0;
+}
+
+
+
+
+
+section.landingMLBB.mid4{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.lpContentMid4{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 5vw 5%;
+    text-align: center;
+}
+.seppOrg{
+    height: auto;
+    width: 100%;
+    margin: 3% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seppOrg span{
+    margin: 1%;
+}
+.seppOrg span img{
+    height: 8vw;
+    opacity: 30%;
+    filter: grayscale(50);
+    cursor: pointer;
+}
+.seppOrg span img:hover{
+    opacity: 100%;
+    filter: none;
+    transition: 400ms ease;
+}
+
+
+
+
+
+
+
+
+section.landingMLBB.mid5{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.lpContentMid5{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 5vw 5%;
+    text-align: center;
+}
+.coreTeam{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+.coreTeam span{
+    margin: 0 1%;
+    cursor: pointer;
+}
+.coreTeam span#bigBoss img{
+    height: 22vw;
+    border-radius: 1vw;
+    margin-bottom: 2%;
+}
+.coreTeam span img{
+    height: 17vw;
+    border-radius: 1vw;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+@keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes fade-in-down2 {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+@keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+@keyframes roll-out {
+    0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(120deg);
+  }
+}
+@keyframes elastic-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media screen and (max-width: 500px){
+    .landingPageMLBB.top img#miyaML{
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        padding: 0 5%;
+        padding-top: 30%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        animation: fade-in-down 3000ms ease;
+        content: url('../assets/MLBB_Landing_Assets/MSLNewLogo.png');
+    }
+    .lpContentTop{
+        height: auto;
+        text-align: center;
+        padding: 5vw 5%;
+        padding-bottom: 3%;
+    }
+    .lpContentTop h2{
+        font-size: 20vw;
+        margin-left: -6%;
+        line-height: 15vw;
+        text-align: center;
+        animation: fade-in-up 2000ms ease;
+    }
+    .lpContentTop h4{
+        font-size: 8vw;
+        line-height: 8vw;
+        animation: fade-in-up 3000ms ease;
+    }
+    .lpContentTop1{
+        width: 100%;
+        position: relative;
+        margin: 2% 0;
+        bottom: 0;
+        justify-content: center;
+        border-radius: 0;
+        animation: fade-in-up 4000ms ease;
+    }
+    .lpContentTop1 span{
+        margin: 0 3%;
+    }
+    .lpContentTop1 span h3{
+        font-size: 5vw;
+    }
+    .lpContentTop1 span h6{
+        font-size: 2vw;
+    }
+    .lpContentTop2{
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        animation: fade-in-up 4000ms ease;
+    }
+    .lpContentTop2 a{
+        margin: 1%;
+    }
+    .lpContentTop2 button{
+        padding: 1vw 2vw;
+    }
+    .lpContentTop2 button h6{
+        font-size: 3vw;
+    }
+
+
+    .lpContentMid0.definition{
+        display: block;
+        padding: 15vw 5%;
+        padding-bottom: 40vw;
+    }
+    .lpcm0.right{
+        display: none;
+    }
+    .lpcm0.left{
+        width: 100%;
+    }
+    .lpcm0.left h5{
+        font-size: 10vw;
+        line-height: 8vw;
+    }
+    .lpcm0.left h2{
+        font-size: 15vw;
+        line-height: 12vw;
+    }
+    .lpcm0.left h4{
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+    .lpcm0.left p{
+        font-size: 3vw;
+    }
+    .lpcm0.left div span h2{
+        font-size: 8vw;
+    }
+    .lpcm0.left div span p{
+        font-size: 1.5vw;
+    }
+
+
+    .lpcm0.right1{
+        height: 100%;
+        width: 100%;
+        text-align: left;
+    }
+    .lpcm0.right1 img#rogerSkin{
+        top: 0;
+        bottom: 0;
+        right: -10%;
+        /* transform: translate(0, 30%); */
+        height: 50vw;
+        z-index: 1;
+    }
+    .lpcm0.right1 h6{
+        font-size: 3vw;
+    }
+    .lpcm0.right1 button{
+        position: relative;
+        margin-top: 5%;
+        padding: 1vw 5vw;
+        background: none;
+        border: solid 2px white;
+        border-radius: 50px;
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+
+    .lpContentMid0.updates{
+        display: none;
+    }
+    .lpContentMid1{
+        padding: 8vw 5%;
+        margin-top: 0;
+        margin-bottom: 10vw;
+    }
+    .lpContentMid1 h4{
+        font-size: 10vw;
+        line-height: 8vw;
+    }
+    .lpContentMid1 p{
+        font-size: 3vw;
+        margin: 2% 0;
+        position: relative;
+        z-index: 1;
+    }
+    .lpContentMid1 button{
+        padding: 1vw 5vw;
+    }
+    .lpContentMid1 button h6{
+        font-size: 3vw;
+    }
+    .lpContentMid1 img#fannySkin{
+        left: -50%;
+        height: 50vw;
+        opacity: 50%;
+    }
+    .lpContentMid1 img#hanzoSkin{
+        right: -40%;
+        height: 50vw;
+        opacity: 50%;
+    }
+
+
+
+    .lpContentMid2{
+        height: auto;
+        width: 100%;
+        padding: 15vw 5%;
+    }
+    .lpContentMid2 h4{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    .lpContentMid2 h6{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .lpcmButtons button{
+        padding: 1vw 5vw;
+    }
+    .lpcmEvents{
+        display: none;
+    }
+
+
+
+
+
+    .lpContentMid4{
+        height: auto;
+        width: 100%;
+        padding: 15vw 5%;
+    }
+    .lpContentMid4 h6{
+        font-size: 3vw;
+    }
+    .seppOrg{
+        margin: 5% 0;
+    }
+    .seppOrg span img{
+        height: 15vw;
+        opacity: 100%;
+        filter: none;
+    }
+
+    section.landingMLBB.mid5{
+        display: none;
+    }
+}

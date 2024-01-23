@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.allEvents{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+section.eventsPageMLBB.top{
+    height: auto;
+    width: 100%;
+    background: 
+        linear-gradient(transparent, black 90%),
+        url('../assets/MLBB_Landing_Assets/LandingBG.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.epContentTop{
+    height: auto;
+    width: 100%;
+    padding: 12vh 5%;
+    padding-bottom: 4vw;
+}
+.epContentTop h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 8vw;
+    line-height: 7vw;
+    text-align: center;
+    font-style: italic;
+}
+.epContentTop h4{
+    text-align: center;
+}
+
+
+
+.epContentMid{
+    height: auto;
+    width: 100%;
+    padding: 0 5%;
+    padding-bottom: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.epContentMid a{
+    height: auto;
+    width: 23%;
+    margin: 1%;
+    text-decoration: none;
+    border: solid 2px white;
+    border-radius: 1vw;
+    position: relative;
+    overflow: hidden;
+    animation:  fade-in-up 600ms ease;
+}
+.upcomingEvents{
+    height: auto;
+    width: 100%;
+    top: 5%;
+    left: -38%;
+    text-align: center;
+    background: black;
+    padding: 1vw;
+    position: absolute;
+    z-index: 2;
+    rotate: -45deg;
+}
+.upcomingEvents.active{
+    display: none;
+}
+.epcmContent{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 1vw;
+    padding: 5% 7%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    filter: blur(20px);
+    cursor: not-allowed;
+}
+.epcmContent.active{
+    filter: none;
+    cursor: pointer;
+}
+.epcmContent img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.epcmContent h5{
+    font-size: 1.2vw;
+}
+.epcmContent p{
+    margin-top: 3%;
+    font-size: 0.7vw;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    section.eventsPageMLBB.top{
+        padding-top: 8vh;
+    }
+    .epContentTop{
+        padding: 8vw 5%;
+        padding-bottom: 4vw;
+    }
+    .epContentTop h2{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .epContentTop h4{
+        font-size: 3.5vw;
+        margin-bottom: 5%;
+    }
+    .epContentMid{
+        justify-content: center;
+    }
+    .epContentMid a{
+        width: 46%;
+        margin: 2%;
+        border: solid 1px white;
+        border-radius: 3vw;
+    }
+    .upcomingEvents{
+        top: 10%;
+        left: -30%;
+        padding: 3vw 2vw;
+    }
+    .upcomingEvents h6{
+        font-size: 3vw;
+    }
+    .epcmContent{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        border-radius: 1vw;
+        padding: 10% 5%;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        filter: blur(20px);
+        cursor: not-allowed;
+    }
+    .epcmContent h5{
+        font-size: 4vw;
+        margin: 5% 0;
+    }
+    .epcmContent p{
+        display: none;
+    }
+}

@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.applySL{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+.slRegisterContainer{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.slRegisterContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.slrContent.left{
+    height: 100%;
+    width: 80%;
+    padding: 6% 5%;
+    /* background: white; */
+}
+.slrContent.left h3{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 5vw;
+    text-align: center;
+}
+.applySLNav{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+}
+.applySLNav button{
+    margin: 2% 0;
+    margin-right: 3%;
+    padding: 0.5vw;
+    background: none;
+    border: none;
+    outline: none;
+    opacity: 30%;
+    cursor: pointer;
+}
+.applySLNav button:hover{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+.applySLNav button.active{
+    opacity: 100%;
+    border-bottom: solid 1px white;
+    transition: 600ms ease;
+}
+.applySLContainer{
+    height: auto;
+    width: 60%;
+    animation: fade-in-left 800ms ease;
+    visibility: hidden;
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+.applySLContainer.active{
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.applySLContainer h6{
+    width: 100%;
+    margin-bottom: 3%;
+}
+.applySLContainer span.proceedButton{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    animation: fade-in-left 1000ms ease;
+}
+.applySLContainer span.proceedButton.disabled{
+    display: none;
+}
+.applySLContainer span.proceedButton button{
+    background: none;
+    border: none;
+    outline: none;
+    margin: 1% 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+.applySLContainer span.proceedButton button h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.applySLContainer span.proceedButton button h6 .faIcons{
+    margin-left: 10%;
+    font-size: 2vw;
+    animation: fade-in-left 2000ms ease infinite;
+}
+.applySLContainer a{
+    color: goldenrod;
+}
+.applySLContainer span{
+    margin-top: 1%;
+    position: relative;
+    width: 100%;
+}
+.applySLContainer span label{
+    position: absolute;
+}
+.applySLContainer span label p{
+    font-size: 0.7vw;
+}
+.applySLContainer span input{
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    outline: none;
+}
+.applySLContainer span input::-webkit-inner-spin-button,
+.noSpin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.applySLContainer span select{
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    position: relative;
+    z-index: 3;
+}
+.applySLContainer span textarea{
+    padding: 0.5vw;
+    border-radius: 1vw;
+    height: 7vw;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    outline: none;
+}
+.applySLContainer span#schoolInformation{
+    height: auto;
+    width: 100%;
+}
+.applySLContainer span#schoolInformation textarea{
+    width: 100%;
+    margin-top: 3.5%;
+}
+.applySLContainer span#schoolChapter{
+    height: auto;
+    width: 20%;
+}
+.applySLContainer span#schoolChapter select{
+    margin-top: 17%;
+    width: 100%;
+}
+.applySLContainer span#schoolAddress{
+    height: auto;
+    width: 78%;
+    overflow: hidden;
+}
+.applySLContainer span#schoolAddress input{
+    width: 100%;
+    margin-top: 4%;
+    text-transform: capitalize;
+}
+.applySLContainer span#schoolName{
+    height: auto;
+    width: 70%;
+}
+.applySLContainer span#schoolName input{
+    margin-top: 4%;
+    text-transform: capitalize;
+}
+.applySLContainer span#schoolCampus{
+    height: auto;
+    width: 29%;
+}
+.applySLContainer span#schoolCampus input{
+    margin-top: 10%;
+    text-transform: capitalize;
+}
+.applySLContainer span#SLTournament1{
+    height: auto;
+    width: 47%;
+}
+.applySLContainer span#SLTournament1 select{
+    margin-top: 12%;
+    width: 100%;
+}
+.applySLContainer span#SLTournament2{
+    height: auto;
+    width: 51%;
+}
+.applySLContainer span#SLTournament2 select{
+    margin-top: 11%;
+    width: 100%;
+}
+
+.applySLContainer span#schoolNotes{
+    margin-top: 5%;
+}
+
+
+
+
+
+.applySLContainer span#SLInformation{
+    height: auto;
+    width: 100%;
+}
+.applySLContainer span#SLInformation textarea{
+    width: 100%;
+    margin-top: 3.5%;
+}
+.applySLContainer span#SLFullName{
+    height: auto;
+    width: 70%;
+}
+.applySLContainer span#SLFullName input{
+    margin-top: 4%;
+    text-transform: capitalize;
+}
+.applySLContainer span#SLNickname{
+    height: auto;
+    width: 29%;
+}
+.applySLContainer span#SLNickname input{
+    margin-top: 10%;
+    text-transform: capitalize;
+}
+.applySLContainer span#SLFacebook{
+    height: auto;
+    width: 32.5%;
+}
+.applySLContainer span#SLFacebook input{
+    margin-top: 8%;
+}
+.applySLContainer span#SLEmail{
+    height: auto;
+    width: 32.5%;
+}
+.applySLContainer span#SLEmail input{
+    margin-top: 8%;
+}
+.applySLContainer span#SLContact{
+    height: auto;
+    width: 32.5%;
+}
+.applySLContainer span#SLContact input{
+    margin-top: 8%;
+}
+.applySLContainer span#SLGender{
+    height: auto;
+    width: 20%;
+}
+.applySLContainer span#SLGender select{
+    margin-top: 14%;
+    width: 100%;
+}
+.applySLContainer span#SLBirthday{
+    height: auto;
+    width: 20%;
+}
+.applySLContainer span#SLBirthday input{
+    margin-top: 14%;
+}
+.applySLContainer span#SLAge{
+    height: auto;
+    width: 8%;
+}
+.applySLContainer span#SLAge input{
+    margin-top: 35%;
+    text-align: center;
+}
+.applySLContainer span#SLCourse{
+    height: auto;
+    width: 48%;
+}
+.applySLContainer span#SLCourse input{
+    margin-top: 6%;
+    text-transform: capitalize;
+}
+.applySLContainer span#SLGForms{
+    height: auto;
+    width: 49%;
+}
+.applySLContainer span#SLGForms select{
+    margin-top: 6%;
+    width: 100%;
+}
+.applySLContainer span#SLGSheets{
+    height: auto;
+    width: 49%;
+}
+.applySLContainer span#SLGSheets select{
+    margin-top: 6%;
+    width: 100%;
+}
+.applySLContainer span#SLQuestion1{
+    height: auto;
+    width: 100%;
+}
+.applySLContainer span#SLQuestion1 textarea{
+    height: 4vw;
+    width: 100%;
+    margin-top: 3.5%;
+}
+.applySLContainer span#SLQuestion2{
+    height: auto;
+    width: 100%;
+}
+.applySLContainer span#SLQuestion2 textarea{
+    height: 4vw;
+    width: 100%;
+    margin-top: 6%;
+}
+.applySLContainer span#SLQuestion3{
+    height: auto;
+    width: 100%;
+}
+.applySLContainer span#SLQuestion3 textarea{
+    height: 4vw;
+    width: 100%;
+    margin-top: 6%;
+}
+.applySLContainer span#SLQuestion4{
+    height: auto;
+    width: 100%;
+}
+.applySLContainer span#SLQuestion4 textarea{
+    height: 4vw;
+    width: 100%;
+    margin-top: 6%;
+}
+.successFilling{
+    height: auto;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allYouSetUp{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.allYouSetUp img{
+    height: 12vw;
+}
+.allYouSetUp.congrats{
+    animation-delay: 400ms;
+    animation: fade-in-down 1000ms ease;
+}
+.allYouSetUp.congrats img{
+    height: 15vw;
+}
+.allYouSetUp.congrats h5{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5vw;
+    font-style: italic;
+    margin-top: 3%;
+}
+.allYouSetUp.congrats p{
+    font-size: 0.7vw;
+    line-height: 1vw;
+    margin: 0;
+}
+.allYouSetUp.congrats h6{
+    color: goldenrod;
+    margin: 0;
+}
+.allYouSetUp h6{
+    margin: 3% 0;
+}
+.allYouSetUp input{
+    padding: 0.5vw 3vw;
+    border-radius: 50px;
+    border: solid 2px white;
+    font-size: 1vw;
+    font-family: 'Bruno Ace SC', cursive;
+    background: transparent;
+    color: white;
+    opacity: 50%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.allYouSetUp input:hover{
+    box-shadow: 0 0 20px white;
+    opacity: 100%;
+    transition: 400ms ease;
+}
+
+
+
+
+
+.slrContent.right{
+    height: 100%;
+    width: 20%;
+    position: relative;
+}
+.slrContent.right img{
+    position: absolute;
+    top: 0;
+    right: -75%;
+    height: 100%;
+    z-index: 2;
+    animation: fade-in-right 1000ms ease;
+}

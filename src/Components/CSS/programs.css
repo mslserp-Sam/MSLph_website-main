@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+
+
+.mainContainer.programs{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+section.programPageMLBB.top{
+    height: 100vh;
+    width: 100%;
+    background: 
+        linear-gradient(transparent, black 90%),
+        url('../assets/MLBB_Landing_Assets/LandingBG.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.ppContentTop{
+    height: auto;
+    width: 100%;
+    padding: 12vh 10%;
+    padding-bottom: 4vw;
+}
+.ppContentTop h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 8vw;
+    font-weight: 700;
+    line-height: 7vw;
+    text-align: center;
+    font-style: italic;
+}
+.ppContentTop h4{
+    text-align: center;
+}
+.ppContentTop1{
+    height: auto;
+    width: 100%;
+    padding: 5vw 8%;
+    padding-bottom: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ppContentTop1.inactive{
+    position: relative;
+}
+.ppContentTop1.inactive h5{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(100%, 50%);
+    z-index: 5;
+    text-shadow: 0 0 50px black;
+}
+.progOffers.sepp,
+.progOffers.eosr,
+.progOffers.bwot,
+.progOffers.mcc{
+    height: 20vw;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.progOffers.mcc{
+    filter: blur(10px);
+}
+.progOffers.sepp h3{
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15vw;
+    font-weight: 700;
+    line-height: 10vw;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    top: 0;
+}
+.progOffers.eosr h3{
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15vw;
+    font-weight: 700;
+    line-height: 10vw;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    top: 0;
+    right: 0;
+}
+.progOffers.bwot h3{
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15vw;
+    line-height: 10vw;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    top: 0;
+}
+.progOffers.mcc h3{
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15vw;
+    line-height: 10vw;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    top: 0;
+    right: 0;
+}
+.poContent.skin{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.poContent.skin img{
+    height: 25vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.poContent.skin img#natanSkin{
+    animation:  fade-in-left 800ms ease;
+}
+.poContent.skin img#silvanaSkin{
+    animation:  fade-in-right 800ms ease;
+}
+.poContent.skin.mobile{
+    display: none;
+}
+.poContent.det{
+    height: 100%;
+    width: 47%;
+    padding: 2% 0;
+    position: relative;
+}
+.poContent.det.sepp{
+    animation:  fade-in-right 800ms ease;
+}
+.poContent.det.eosr{
+    animation:  fade-in-left 800ms ease;
+}
+.poContent.det h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+.poContent.det p{
+    margin: 2% 0;
+}
+.poContent.det p span{
+    margin-left: 5%;
+}
+.poContent.det a{
+    width: 30%;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    opacity: 50%;
+}
+.poContent.det a#active{
+    width: 30%;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    opacity: 50%;
+}
+.poContent.det a#active:hover{
+    opacity: 100%;
+    text-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+.poContent.det a h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poContent.det a h6 .faIcon{
+    margin-left: 2%;
+}
+section.programPageMLBB.mid{
+    height: auto;
+    width: 100%;
+    padding-bottom: 5vw;
+}
+
+
+
+@media screen and (max-width: 500px){
+    .mainContainer.programs{
+        padding-bottom: 8vh;
+    }
+    section.programPageMLBB.top{
+        padding-top: 8vh;
+    }
+    .ppContentTop{
+        padding: 8vw 5%;
+        padding-bottom: 4vw;
+    }
+    .ppContentTop h2{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .ppContentTop h4{
+        font-size: 3.5vw;
+        margin-bottom: 5%;
+    }
+    .ppContentTop1{
+        padding: 15vw 8%;
+    }
+    .progOffers.sepp{
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    .progOffers.sepp h3{
+        font-size: 33vw;
+        line-height: 30vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .progOffers.eosr h3{
+        font-size: 33vw;
+        line-height: 30vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .progOffers.bwot h3{
+        font-size: 29vw;
+        line-height: 30vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .poContent.skin{
+        width: 100%;
+    }
+    .poContent.skin.mobile{
+        display: block;
+    }
+    .poContent.skin.right{
+        display: none;
+    }
+    .poContent.skin img{
+        height: 50vw;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .poContent.skin img#natanSkin{
+        animation:  fade-in-down 1500ms ease;
+    }
+    .poContent.skin img#silvanaSkin{
+        animation:  fade-in-down 1500ms ease;
+    }
+    .poContent.det{
+        width: 100%;
+        padding: 5% 0;
+    }
+    .poContent.det.sepp{
+        animation:  fade-in-down 1000ms ease;
+    }
+    .poContent.det.eosr{
+        animation:  fade-in-down 1000ms ease;
+    }
+    .poContent.det h4{
+        font-size: 7vw;
+        line-height: 6vw;
+    }
+    .poContent.det p{
+        font-size: 3vw;
+        margin: 5% 0;
+        margin-bottom: 20%;
+    }
+    .poContent.det a{
+        width: 50%;
+        bottom: 0;
+        right: 0;
+        opacity: 100%;
+    }
+    .poContent.det a h6{
+        font-size: 3vw;
+        width: 100%;
+    }
+    .poContent.det a#active{
+        width: 50%;
+        text-decoration: none;
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        opacity: 50%;
+    }
+
+
+    section.programPageMLBB.mid{
+        /* display: none; */
+    }
+    .progOffers.eosr,
+    .progOffers.bwot,
+    .progOffers.mcc{
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+}

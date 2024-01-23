@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.sepp{
+    height: auto;
+    width: 100%;
+    background: black;
+}
+
+
+section.seppPageMLBB.top{
+    height: auto;
+    width: 100%;
+    background: 
+        linear-gradient(transparent, black 95%),
+        url('../assets/MLBB_Landing_Assets/LandingBG01.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.seppContentTop{
+    height: auto;
+    width: 100%;
+    padding: 10vw 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seppContentTop h2{
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30vw;
+    font-weight: 700;
+    line-height: 20vw;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    right: 10%;
+    top: 10%;
+    animation:  fade-in-right 600ms ease;
+}
+.scTop.left{
+    height: 100%;
+    width: 30%;
+}
+.scTop.left img{
+    position: absolute;
+    left: -20%;
+    bottom: 0;
+    height: 45vw;
+    animation:  fade-in-left 1000ms ease;
+}
+.scTop.right{
+    height: 100%;
+    width: 55%;
+    position: relative;
+    padding-top: 20%;
+}
+.scTop.right h4{
+    text-align: center;
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 2vw;
+    animation:  fade-in-right 1000ms ease;
+}
+.scTop.right p{
+    margin: 1% 0;
+    animation:  fade-in-right 1000ms ease;
+}
+.scTop.right p span{
+    margin-left: 5%;
+}
+.scProgButtons{
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+    z-index: 5;
+}
+.scProgButtons a{
+    margin: 0 1%;
+}
+.scProgButtons button{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.scProgButtons button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+section.seppPageMLBB.top img#scratch03{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/* SEPP Navigation Bar */
+
+
+section.seppPageMLBB.nav{
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+section.seppPageMLBB.nav button{
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 3%;
+    opacity: 30%;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+section.seppPageMLBB.nav button:hover{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+section.seppPageMLBB.nav button.active{
+    opacity: 100%;
+    border-bottom: solid 1px white;
+}
+
+
+
+/* SEPP Body Content */
+
+
+section.seppPageMLBB.mid{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20vh;
+    animation:  fade-in-left 800ms ease;
+}
+.seppContentMid1{
+    height: auto;
+    width: 100%;
+    padding: 3vw 10%;
+}
+.seppContentMid1 h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+}
+.scMid1Container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1% 0;
+}
+.scMid1Container div{
+    height: auto;
+    width: 48%;
+    /* border: solid 2px white; */
+    padding: 0 2%;
+    border-radius: 1vw;
+    margin: 1%;
+}
+.scMid1Container div h6{
+    color: gold;
+    font-size: 1.5vw;
+}
+.scMid1Container div p{
+    margin-top: 2%;
+}
+
+
+.seppContentMid2{
+    height: auto;
+    width: 100%;
+    padding: 3vw 10%;
+}
+.seppContentMid2 h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+}
+.scMid2Container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1% 0;
+}
+.scMid2Container div{
+    height: auto;
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
+.scMid2Container div img{
+    height: 15vw;
+    margin-top: 5%;
+}
+.scMid2Container div h6{
+    text-align: center;
+    color: gold;
+    font-size: 1.2vw;
+}
+.scMid2Container div p{
+    margin: 2% 0;
+}
+.scMid2Container div p span{
+    margin-right: 15%;
+}
+
+
+.seppContentMid3{
+    height: auto;
+    width: 100%;
+    padding: 2vw 10%;
+}
+.seppContentMid3 a h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+.seppContentMid3 a h4 .faIcon{
+    margin-left: 2%;
+}
+.scMid3Container{
+    height: auto;
+    width: 100%;
+    margin: 1% 0;
+    animation:  fade-in-down 600ms ease;
+}
+.scMid3Container h5{
+    text-align: center;
+    font-size: 1.2vw;
+    color: gold;
+}
+.scMid3Container p{
+    padding: 2% 10%;
+}
+.scMid3Container p span{
+    margin-left: 5%;
+}
+
+
+
+.seppContentMid4{
+    height: auto;
+    width: 100%;
+    padding: 2vw 10%;
+}
+.seppContentMid4 a h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+.seppContentMid4 a h4 .faIcon{
+    margin-left: 2%;
+}
+.scMid4Container{
+    height: auto;
+    width: 100%;
+    margin: 1% 0;
+    animation:  fade-in-down 600ms ease;
+}
+.scMid4Container h5{
+    text-align: center;
+    font-size: 1.2vw;
+    color: gold;
+}
+.scMid4Container p{
+    padding: 2% 10%;
+}
+.scMid4Container p span{
+    margin-left: 5%;
+}
+.scMid4Container p table{
+    height: auto;
+    width: 100%;
+    margin: 2% 0;
+    border-radius: 1vw;
+    text-align: center;
+}
+.scMid4Container p table thead tr th{
+    border: solid 1px white;
+    color: gold;
+}
+.scMid4Container p table tbody tr td{
+    border: solid 1px white;
+    padding: 1% 0;
+}
+
+
+.seppContentMid5{
+    height: auto;
+    width: 100%;
+    padding: 2vw 10%;
+}
+.seppContentMid5 a h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+.seppContentMid5 a h4 .faIcon{
+    margin-left: 2%;
+}
+.scMid5Container{
+    height: auto;
+    width: 100%;
+    margin: 1% 0;
+    animation:  fade-in-down 600ms ease;
+}
+.scMid5Container h5{
+    text-align: center;
+    font-size: 1.2vw;
+    color: gold;
+}
+.scMid5Container p{
+    padding: 2% 10%;
+}
+.scMid5Container p span{
+    margin-left: 5%;
+}
+
+
+/* Execution Guide CSS */
+
+section.seppPageMLBB.mid button#backtoSEPP{
+    margin-left: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+section.seppPageMLBB.mid button#backtoSEPP h6{
+    display: flex;
+    align-items: center;
+}
+
+.seppContentForms{
+    height: auto;
+    width: 100%;
+    padding: 3vw 7%;
+}
+.seppContentForms h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+}
+.sedContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1% 0;
+}
+.sedContainer a{
+    text-decoration: none;
+    height: auto;
+    width: 20%;
+    margin: 1%;
+    border-radius: 1vw;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px white;
+}
+.sedContainer a img{
+    width: 100%;
+    opacity: 80%;
+}
+.sedContainer a p{
+    padding: 3% 2%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sedContainer a p .faIcons{
+    margin-right: 2%;
+}
+
+
+
+.seppContentProcess{
+    height: auto;
+    width: 100%;
+    padding: 3vw 10%;
+}
+.seppContentProcess h4{
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+}
+.seppContentProcess h5{
+    color: #f2c31a;
+    margin: 2% 0;
+}
+.seppContentProcess p{
+    margin-left: 3%;
+}
+.seppContentProcess p span{
+    color: skyblue;
+    font-style: italic;
+}
+.seppContentProcess p span a{
+    color: skyblue;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .seppContentTop{
+        height: auto;
+        width: 100%;
+        padding: 8vh 5%;
+        display: block;
+        overflow: hidden;
+    }
+    .seppContentTop h2{
+        position: absolute;
+        font-family: 'Kanit', sans-serif;
+        font-size: 30vw;
+        line-height: 20vw;
+        top: 30%;
+        opacity: 20%;
+        animation: none;
+    }
+    .scTop.left{
+        width: 100%;
+    }
+    .scTop.left img{
+        position: absolute;
+        left: -70%;
+        top: 20%;
+        height: 100vw;
+        opacity: 50%;
+        animation:  none;
+    }
+    .scTop.right{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding-top: 10%;
+    }
+    .scTop.right h4{
+        font-size: 7vw;
+        line-height: 7vw;
+        animation:  fade-in-down 1000ms ease;
+    }
+    .scTop.right p{
+        font-size: 3vw;
+        animation:  fade-in-down 1000ms ease;
+    }
+    .scProgButtons button{
+        padding: 1vw 5vw;
+        opacity: 100%;
+    }
+    .scProgButtons button h6{
+        font-size: 3vw;
+    }
+
+
+    section.seppPageMLBB.nav{
+        padding: 5% 3%;
+        justify-content: center;
+    }
+    section.seppPageMLBB.nav button{
+        margin: 0 2%;
+    }
+    section.seppPageMLBB.nav button h6{
+        font-size: 3vw;
+    }
+
+    .seppContentMid1 h4{
+        text-align: center;
+        font-size: 6vw;
+    }
+    .scMid1Container div{
+        height: auto;
+        width: 100%;
+        margin: 2% 0;
+        padding: 0;
+    }
+    .scMid1Container div h6{
+        color: gold;
+        font-size: 4vw;
+    }
+    .scMid1Container div p{
+        font-size: 3vw;
+    }
+    .seppContentMid2 h4{
+        text-align: center;
+        font-size: 6vw;
+    }
+    .scMid2Container div{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .scMid2Container div img{
+        height: 52vw;
+        margin-top: 5%;
+    }
+    .scMid2Container div h6{
+        font-size: 4vw;
+    }
+    .scMid2Container div p{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .scMid2Container div p span{
+        margin-right: 0;
+    }
+    .seppContentMid3 a h4{
+        font-size: 6vw;
+        line-height: 5vw;
+    }
+    .scMid3Container h5{
+        margin-top: 5%;
+        font-size: 4vw;
+        text-align: left;
+        line-height: 4vw;
+    }
+    .scMid3Container p{
+        padding: 2% 0;
+        font-size: 3vw;
+    }
+    .seppContentMid4 a h4{
+        font-size: 6vw;
+        line-height: 5vw;
+    }
+    .scMid4Container p{
+        padding: 2% 0%;
+        font-size: 3vw;
+    }
+    .scMid4Container p table{
+        font-size: 2vw;
+    }
+    .seppContentMid5 a h4{
+        font-size: 6vw;
+        line-height: 5vw;
+    }
+    .scMid5Container p{
+        padding: 2% 0;
+        font-size: 3vw;
+    }
+
+
+    section.seppPageMLBB.mid button#backtoSEPP{
+        margin-left: 5%;
+    }
+    section.seppPageMLBB.mid button#backtoSEPP h6{
+        font-size: 2vw;
+    }
+    .seppContentForms{
+        padding: 1vw 5%;
+    }
+    .seppContentForms h4{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .sedContainer{
+        justify-content: center;
+    }
+    .sedContainer a{
+        width: 45%;
+        margin: 2%;
+    }
+    .sedContainer a p{
+        padding: 5% 1%;
+        font-size: 2.5vw;
+    }
+    .seppContentProcess{
+        height: auto;
+        width: 100%;
+        padding: 1vw 5%;
+    }
+    .seppContentProcess h5{
+        font-size: 4vw;
+        margin: 5% 0;
+    }
+    .seppContentProcess h6{
+        font-size: 3vw;
+        margin-bottom: 2%;
+    }
+    .seppContentProcess p{
+        font-size: 3vw;
+    }
+}

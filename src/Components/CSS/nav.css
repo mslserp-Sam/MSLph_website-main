@@ -1,0 +1,1196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+/* font-family: 'Bruno Ace SC', cursive; */
+h6{
+    font-family: 'Bruno Ace SC', cursive; 
+}
+
+nav{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.loginContainer{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 35%;
+    padding-bottom: 5%;
+}
+.loginContent{
+    height: auto;
+    width: 100%;
+    border-radius: 2vw;
+    box-shadow: 0 0 20px white;
+    padding: 10% 5%;
+    background: url('../assets/MLBB_Landing_Assets/LandingBG01.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    animation:  fade-in-down 600ms ease;
+}
+.loginContent button#closeLogin{
+    top: 5%;
+    right: 7%;
+    position: absolute;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.loginContent button#closeLogin:hover h5{
+    color: red;
+    transition: 400ms ease;
+}
+.loginContent img{
+    height: 8vw;
+}
+.loginContent a{
+    color: gold;
+}
+.loginEmail{
+    height: auto;
+    width: 100%;
+    margin: 3% 0;
+    position: relative;
+}
+.loginEmail input{
+    width: 80%;
+    margin: 1% 0;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 0.9vw;
+}
+.loginEmail button{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+    margin: 2% 0;
+}
+.loginEmail button h6{
+    margin-bottom: 0;
+}
+.loginEmail button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 20px gold;
+    border: solid 2px black;
+    transition: 400ms ease;
+    background: gold;
+}
+.loginEmail button:hover h6{
+    color: black;
+}
+.loginEmail p{
+    margin: 2% 0;
+}
+.loginSocials{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginSocials button{
+    padding: 1vw;
+    background: transparent;
+    border: solid 2px white;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    cursor: not-allowed;
+    opacity: 30%;
+}
+.loginSocials button#active{
+    cursor: pointer;
+    opacity: 100%;
+}
+.loginSocials button#active:hover{
+    box-shadow: 0 0 20px gold;
+    transition: 400ms ease;
+}
+.loginSocials button h6{
+    line-height: 1vw;
+    margin-bottom: 0;
+}
+.loginSocials button h6.faIcon{
+    font-size: 1.5vw;
+    line-height: 0.7vw;
+    margin-right: 3%;
+}
+.loginContent button#createAccount{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+.registerContainer{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 20%;
+    padding-bottom: 5%;
+}
+.registerContainer form{
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+    box-shadow: 0 0 20px white;
+    background: url('../assets/MLBB_Landing_Assets/LandingBG01.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    animation:  fade-in-down 600ms ease;
+}
+.registerContent{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+.registerContent button#closeRegister{
+    top: 5%;
+    right: 3%;
+    position: absolute;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.registerContent button#closeRegister:hover h5{
+    color: red;
+    transition: 400ms ease;
+}
+.registerPlayer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regPlayer.left{
+    height: 100%;
+    width: 43%;
+    padding: 6% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 400ms ease;
+}
+.regPlayer.left.complete{
+    animation: roll-out 2s ease;
+}
+
+
+.sampleCardContainer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    animation: spin 20s infinite linear;
+    transform-style: preserve-3d;
+    position: relative;
+}
+/* .sampleCardContainer.last{
+    animation: spin 1s infinite linear;
+} */
+.sampleCard.front{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-top-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    backface-visibility: hidden;
+    padding: 4%;
+    background: 
+        linear-gradient(transparent, black 90%),
+        url('../assets/MLBB_Landing_Assets/LandingBG.png') no-repeat center;
+    background-size: cover;
+    border: solid 2px white;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+    overflow: hidden;
+}
+.sampleCard.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    backface-visibility: hidden;
+    padding: 2%;
+    background: url('../assets/MLBB_Landing_Assets/LandingBG01.png') no-repeat center;
+    background-size: cover;
+    box-shadow: 0 0 20px white;
+    border: solid 2px white;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sampleCard.back img{
+    height: 10vw;
+}
+@keyframes spin {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(1turn);
+    }
+}
+.cardSampleContent{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    padding: 3% 5%;
+    background: url('../assets/MLBB_Landing_Assets/LandingBG01.png')no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.cardSampleContent img#mlbbNewLogo{
+    height: 2.5vw;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+}
+.cardSampleContent img#playerCardImg{
+    /* display: none; */
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    margin: 0 auto;
+}
+.playerBasicDetails{
+    position: absolute;
+    border-bottom-left-radius: 3vw;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3%;
+}
+.pbCardDetails{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pbcDetails.left{
+    height: auto;
+    width: 75%;
+    text-align: left;
+}
+.pbcDetails.left span{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.pbcDetails.left span img{
+    height: 1vw;
+    margin-right: 2%;
+}
+.pbcDetails.left p{
+    font-size: 0.8vw;
+}
+
+
+
+.pbcDetails.right{
+    height: auto;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pbcDetails.right img{
+    height: 4vw;
+}
+
+
+.regForm.right{
+    height: auto;
+    width: 45%;
+    position: relative;
+}
+.regPlayer.right{
+    height: auto;
+    width: 100%;
+    padding: 3% 1%;
+    animation:  fade-in-left 600ms ease;
+    position: relative;
+    visibility: hidden;
+    display: none;
+    /* top: 0;
+    transform: translate(0, 18%); */
+}
+.regPlayer.right.visible{
+    visibility: visible;
+    display: block;
+}
+.regPlayer.right h6{
+    text-align: left;
+}
+.formRegisterContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 1% 2%;
+    margin: 1% 0;
+}
+.formRegisterContainer input{
+    width: 100%;
+    height: auto;
+    padding: 0.5vw;
+    font-size: 0.8vw;
+    border-radius: 0.5vw;
+    border: solid 1px black;
+    margin: 0.5%;
+    margin-top: 4%;
+    background: whitesmoke;
+    position: relative;
+}
+.formRegisterContainer label{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.formRegisterContainer label p{
+    font-size: 0.7vw;
+}
+.formRegisterContainer input::-webkit-inner-spin-button,
+.noSpin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formRegisterContainer select{
+    height: auto;
+    width: 100%;
+    padding: 0.5vw;
+    font-size: 0.8vw;
+    border-radius: 0.5vw;
+    border: solid 1px black;
+    margin: 0.5%;
+}
+.formRegisterContainer span{
+    margin-bottom: 1%;
+}
+.formRegisterContainer span#playerGivenName{
+    width: 100%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerGivenName input{
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+.formRegisterContainer span#playerSurname{
+    width: 100%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerSurname input{
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+.formRegisterContainer span#playerImage{
+    width: 44%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerImage input{
+    margin-top: 11%;
+}
+.formRegisterContainer span#playerBirthday{
+    width: 40%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerBirthday input{
+    margin-top: 12%;
+}
+.formRegisterContainer span#playerAge{
+    width: 13%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerAge input{
+    margin-top: 38%;
+    text-align: center;
+}
+.formRegisterContainer span#playerGender{
+    width: 48%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerGender select{
+    margin-top: 9%;
+}
+.formRegisterContainer span#playerContact{
+    width: 50%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerContact input{
+    margin-top: 9%;
+}
+.formRegisterContainer span#playerGmail{
+    width: 100%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerGmail input{
+    margin-top: 5%;
+}
+
+.formRegisterContainer span#playerArea{
+    width: 49%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerArea select{
+    margin-top: 9%;
+}
+.formRegisterContainer span#playerSchool{
+    width: 100%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerSchool select{
+    margin-top: 5%;
+}
+.formRegisterContainer span#playerSY{
+    width: 49%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerSY select{
+    margin-top: 9%;
+}
+.formRegisterContainer span#playerRegform{
+    width: 49%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerRegform input{
+    margin-top: 10%;
+}
+.formRegisterContainer span#playerStudentID{
+    width: 49%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerStudentID input{
+    margin-top: 10%;
+}
+.formRegisterContainer span#playerCourse{
+    width: 100%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerCourse input{
+    margin-top: 4.5%;
+    text-transform: capitalize;
+}
+
+
+
+
+
+.formRegisterContainer span#playerInGameName{
+    width: 100%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerInGameName input{
+    margin-top: 5%;
+}
+.formRegisterContainer span#playerServer{
+    width: 29%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerServer input{
+    margin-top: 15%;
+    text-align: center;
+}
+.formRegisterContainer span#playerMLBBId{
+    width: 69%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerMLBBId input{
+    margin-top: 6.5%;
+}
+.formRegisterContainer span#playerMLBBSquad{
+    width: 25%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerMLBBSquad input{
+    margin-top: 20%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.formRegisterContainer span#playerRank{
+    width: 38%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerRank select{
+    margin-top: 13%;
+}
+.formRegisterContainer span#playerRole{
+    width: 34%;
+    margin-right: 1%;
+    position: relative;
+    text-align: center;
+}
+.formRegisterContainer span#playerRole select{
+    margin-top: 15%;
+}
+
+
+
+.formRegisterContainer span#playerHero1{
+    width: 32.3%;
+    margin-right: 1%;
+    position: relative;
+}
+.formRegisterContainer span#playerHero1 select{
+    margin-top: 13%;
+}
+
+
+.regPlayer.right.register{
+    height: auto;
+    width: 35%;
+    padding: 3% 1%;
+    animation:  fade-in-right 1000ms ease;
+}
+.registerEmail h5{
+    margin-bottom: 5%;
+    font-size: 1vw;
+}
+.registerEmail img{
+    height: 8vw;
+    margin: 2% 0;
+}
+.registerEmail input{
+    padding: 0.5vw 1vw;
+    width: 70%;
+    border-radius: 50px;
+    border: solid 2px black;
+    margin: 1% 0;
+}
+.registerEmail span{
+    position: relative;
+}
+.registerEmail span label{
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.registerEmail span button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.registerEmail span button p{
+    color: black;
+}
+.registerEmail button.createAccount{
+    margin: 0 1%;
+    margin-top: 5%;
+    padding: 0.1vw 2vw;
+    border: solid 2px white;
+    background: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 50%;
+}
+.registerEmail button p{
+    margin-bottom: 0;
+}
+.registerEmail button.createAccount:hover{
+    opacity: 100%;
+    box-shadow:  0 0 20px white;
+    transition: 600ms ease;
+}
+
+
+
+
+
+
+.playerFormButton{
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playerFormButton button{
+    padding: 0.2vw 3vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+    margin: 0 1%;
+}
+.playerFormButton button p{
+    margin-bottom: 0;
+}
+.playerFormButton button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 20px white;
+    transition: 400ms ease;
+}
+
+
+
+
+
+
+
+.registerSuccessContainer,
+.registerFailedContainer{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 35%;
+    padding-bottom: 5%;
+    z-index: 99;
+}
+.registerSuccessContent,
+.registerFailedContent{
+    height: auto;
+    width: 100%;
+    border-radius: 2vw;
+    box-shadow: 0 0 20px white;
+    padding: 10% 5%;
+    background: url('../assets/MLBB_Landing_Assets/LandingBG01.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    animation:  fade-in-down 600ms ease;
+}
+.registerSuccessContent button#closeRegister,
+.registerFailedContent button#closeRegister{
+    top: 5%;
+    right: 7%;
+    position: absolute;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.registerSuccessContent button#closeRegister:hover h5,
+.registerFailedContent button#closeRegister:hover h5{
+    color: red;
+    transition: 400ms ease;
+}
+.registerSuccessContent img,
+.registerFailedContent img{
+    height: 15vw;
+}
+.registerSuccessContent h5,
+.registerFailedContent h5{
+    margin: 3% 0;
+}
+.registerSuccessContent p,
+.registerFailedContent p{
+    font-size: 0.8vw;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+.navContainerMobile{
+    height: 100vh;
+    width: 100%;
+    padding-top: 8vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+.ncContentModal{
+    height: 100%;
+    width: 70%;
+    padding: 5% 10%;
+    position: absolute;
+    right: 0;
+    background: 
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/FooterBG.png') no-repeat top left;
+    background-size: cover;
+    animation:  fade-in-right 600ms ease;
+}
+.ncContentModal a{
+    text-decoration: none;
+}
+.ncContentModal h3{
+    font-size: 5vw;
+    margin-bottom: 7%;
+}
+.ncContentModal ul{
+    list-style: none;
+    margin: 10% 0;
+    padding: 5%;
+}
+.ncContentModal ul h3{
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.ncContentModal ul li{
+    margin-left: 5%;
+}
+.ncContentModal h4{
+    font-size: 5vw !important; 
+    margin-bottom: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainNavContainer.website{
+    height: 8vh;
+    width: 100%;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.navContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navContainer.mobile{
+    display: none;
+}
+
+/* Website */
+
+.navContent a{
+    text-decoration: none;
+}
+.navContent.left{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navContent.left a{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navContent.left img{
+    height: 3vw;
+    max-width: 100%;
+}
+.navContent.left h4{
+    font-weight: 600;
+    font-size: 1.7vw;
+}
+.navContent.right{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.navContent.right a#dropDown{
+    height: auto;
+    position: relative;
+    margin-right: 7%;
+    cursor: pointer;
+}
+.navContent.right a#dropDown h6{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 0;
+}
+.navContent.right a#dropDown h6 .faIcon.down{
+    font-size: 1.2vw;
+    line-height: 0.7vw;
+    margin-left: 5%;
+}
+.dropDownContent{
+    top: 6vh;
+    height: auto;
+    width: 15vw;
+    position: absolute;
+    background: black;
+    border-radius: 1vw;
+    padding: 20% 0;
+    padding-left: 20%;
+    transition: 1s ease-in-out;
+    transition-duration: 1s;
+    box-shadow: 0 0 10px white;
+    animation:  fade-in-down2 600ms ease;
+}
+.dropDownContent h6{
+    padding-bottom: 10%;
+}
+
+.navContent.right a.mslUserProfile{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    margin-right: 0;
+}
+.navContent.right a.mslUserProfile img{
+    height: 2vw;
+    margin-left: 5%;
+}
+
+
+
+.navContent.right a.logoutUserLink{
+    cursor: pointer;
+    margin: 0;
+    margin-left: 2%;
+    opacity: 50%;
+}
+.navContent.right .connectedUser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navContent.right button#loginSL{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    margin-left: 1%;
+    opacity: 50%;
+    cursor: pointer;
+}
+.navContent.right button#loginSL h6{
+    margin-bottom: 0;
+}
+.navContent.right button#loginSL:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+.navContent.right button#registerSL{
+    padding: 0.5vw 2vw;
+    background: none;
+    border-radius: 50px;
+    margin-left: 1%;
+    border: none;
+    opacity: 50%;
+    cursor: pointer;
+}
+.navContent.right button#registerSL h6{
+    margin-bottom: 0;
+}
+.navContent.right button#registerSL:hover{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+.navContent.right button#logoutSL{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    margin-left: 1%;
+    opacity: 50%;
+    cursor: pointer;
+}
+.navContent.right button#logoutSL h6{
+    margin-bottom: 0;
+}
+.navContent.right button#logoutSL:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+
+
+
+
+.mainContainer.footer{
+    height: auto;
+    width: 100%;
+    background: url('../assets/MLBB_Landing_Assets/FooterBG.png') no-repeat center;
+    background-size: cover;
+}
+section.footerContainer{
+    height: auto;
+    width: 100%;
+    padding: 5vw 10%;
+    padding-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+.footerContent.left{
+    height: auto;
+    width: 50%;
+}
+.footerContent img{
+    height: 5vw;
+}
+.footerContent.right{
+    height: auto;
+    width: 45%;
+    display: flex;
+    justify-content: right;
+}
+.footerContent.right ul{
+    list-style: none;
+    margin-left: 10%;
+}
+.footerContent.right ul h5{
+    color: goldenrod;
+}
+.footerContent.right ul li{
+    margin: 3% 0;
+}
+.footerContent.right ul li a{
+    text-decoration: none;
+    opacity: 30%;
+}
+.footerContent.right ul li a:hover{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+.mainContainer.footer hr{
+    width: 70%;
+    border: solid 1px gray;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+section.footerLogos{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 10%;
+}
+section.footerLogos img{
+    height: 2.5vw;
+    margin: 0 3%;
+}
+section.footerBottom{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    background: rgb(49, 49, 49);
+}
+section.footerBottom p{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .mainNavContainer.website{
+        display: none;
+    }
+    .mainNavContainer.mobile{
+        height: 8vh;
+        width: 100%;
+        padding: 0 5%;
+        background: rgba(0, 0, 0, 0.36);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .navContainer.mobile{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ncMobile.left{
+        height: auto;
+        width: 50%;
+    }
+    .ncMobile.left a{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .ncMobile.left img{
+        height: 13vw;
+    }
+    .ncMobile.right{
+        height: auto;
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .ncMobile.right button{
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .ncMobile.right button h4{
+        font-size: 8vw;
+        line-height: 5vw;
+        margin-bottom: 0;
+    }
+    .mainContainer.footer{
+        background: url('../assets/MLBB_Landing_Assets/FooterBG.png') no-repeat top left;
+        background-size: cover;
+    }
+    section.footerContainer{
+        padding: 5vw 5%;
+        display: block;
+    }
+    .footerContent.left{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .footerContent.left h5{
+        font-size: 5vw;
+    }
+    .footerContent.left p{
+        font-size: 3vw;
+        margin: 2% 0;
+    }
+    .footerContent img{
+        height: 10vw;
+    }
+    .footerContent.right{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .footerContent.right ul{
+        list-style: none;
+        margin-left: 0;
+    }
+    .footerContent.right ul h5{
+        font-size: 4.5vw;
+    }
+    .footerContent.right ul li{
+        margin: 5% 0;
+    }
+    .footerContent.right ul li a h6{
+        font-size: 3vw;
+    }
+    section.footerLogos img{
+        height: 5vw;
+        margin: 3%;
+    }
+    section.footerBottom{
+        padding: 0.5vw 0.2vw;
+    }
+    section.footerBottom p{
+        font-size: 2vw;
+    }
+}

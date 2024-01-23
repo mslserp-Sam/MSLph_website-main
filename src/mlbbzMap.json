@@ -1,0 +1,251 @@
+{
+    "luzon": [
+        {
+            "id": "PH-ABR"
+        },
+        {
+            "id": "PH-ALB"
+        },
+        {
+            "id": "PH-APA"
+        },
+        {
+            "id": "PH-AUR"
+        },
+        {
+            "id": "PH-BAN"
+        },
+        {
+            "id": "PH-BTN"
+        },
+        {
+            "id": "PH-BTG"
+        },
+        {
+            "id": "PH-BEN"
+        },
+        {
+            "id": "PH-BUL"
+        },
+        {
+            "id": "PH-CAN"
+        },
+        {
+            "id": "PH-CAS"
+        },
+        {
+            "id": "PH-CAT"
+        },
+        {
+            "id": "PH-CAV"
+        },
+        {
+            "id": "PH-IFU"
+        },
+        {
+            "id": "PH-ILN"
+        },
+        {
+            "id": "PH-ILS"
+        },
+        {
+            "id": "PH-ISA"
+        },
+        {
+            "id": "PH-KAL"
+        },
+        {
+            "id": "PH-LAG"
+        },
+        {
+            "id": "PH-LUN"
+        },
+        {
+            "id": "PH-MAD"
+        },
+        {
+            "id": "PH-MAS"
+        },
+        {
+            "id": "PH-MOU"
+        },
+        {
+            "id": "PH-MNL"
+        },
+        {
+            "id": "PH-NUE"
+        },
+        {
+            "id": "PH-NUV"
+        },
+        {
+            "id": "PH-MDC"
+        },
+        {
+            "id": "PH-MDR"
+        },
+        {
+            "id": "PH-PLW"
+        },
+        {
+            "id": "PH-PAM"
+        },
+        {
+            "id": "PH-PAN"
+        },
+        {
+            "id": "PH-QUE"
+        },
+        {
+            "id": "PH-QUI"
+        },
+        {
+            "id": "PH-RIZ"
+        },
+        {
+            "id": "PH-ROM"
+        },
+        {
+            "id": "PH-SOR"
+        },
+        {
+            "id": "PH-TAR"
+        },
+        {
+            "id": "PH-ZMB"
+        },
+        {
+            "id": "PH-CAG"
+        }
+    ],
+    "visayas": [
+        {
+            "id": "PH-AKL"
+        },
+        {
+            "id": "PH-ANT"
+        },
+        {
+            "id": "PH-BIL"
+        },
+        {
+            "id": "PH-BOH"
+        },
+        {
+            "id": "PH-CAP"
+        },
+        {
+            "id": "PH-CEB"
+        },
+        {
+            "id": "PH-EAS"
+        },
+        {
+            "id": "PH-GUI"
+        },
+        {
+            "id": "PH-ILI"
+        },
+        {
+            "id": "PH-LEY"
+        },
+        {
+            "id": "PH-NEC"
+        },
+        {
+            "id": "PH-NER"
+        },
+        {
+            "id": "PH-NSA"
+        },
+        {
+            "id": "PH-WSA"
+        },
+        {
+            "id": "PH-SIG"
+        },
+        {
+            "id": "PH-SLE"
+        }
+    ],
+    "mindanao": [
+        {
+            "id": "PH-AGN"
+        },
+        {
+            "id": "PH-AGS"
+        },
+        {
+            "id": "PH-BAS"
+        },
+        {
+            "id": "PH-BUK"
+        },
+        {
+            "id": "PH-CAM"
+        },
+        {
+            "id": "PH-NCO"
+        },
+        {
+            "id": "PH-DAV"
+        },
+        {
+            "id": "PH-DAS"
+        },
+        {
+            "id": "PH-DAO"
+        },
+        {
+            "id": "PH-DIN"
+        },
+        {
+            "id": "PH-LAN"
+        },
+        {
+            "id": "PH-LAS"
+        },
+        {
+            "id": "PH_MG"
+        },
+        {
+            "id": "PH-MSC"
+        },
+        {
+            "id": "PH-MSR"
+        },
+        {
+            "id": "PH-SAR"
+        },
+        {
+            "id": "PH-SCO"
+        },
+        {
+            "id": "PH-SUK"
+        },
+        {
+            "id": "PH-SLU"
+        },
+        {
+            "id": "PH-SUR"
+        },
+        {
+            "id": "PH-SUN"
+        },
+        {
+            "id": "PH-TAW"
+        },
+        {
+            "id": "PH-ZAN"
+        },
+        {
+            "id": "PH-ZSI"
+        },
+        {
+            "id": "PH-ZAS"
+        },
+        {
+            "id": "PH-COM"
+        }
+    ]
+}

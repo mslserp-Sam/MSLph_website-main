@@ -1,0 +1,220 @@
+.contentTitleSub
+{
+    float: right !important;
+}
+.desc
+{
+    height: 55px !important;
+}
+.subTitle, .titleEosr
+{
+    margin-top: 60px !important;
+    right: 85px !important;
+}
+.subTitle
+{
+    font-size: 50px !important;
+    margin-top: 90px !important;
+}
+.contentTitleSub h4{
+    color: gold !important;
+    font-size: 80px !important;
+    font-style: normal !important;
+}
+.contentTitleSub span
+{
+    float: right !important;
+    color: white !important;
+    margin-top: -10px;
+}
+.requirementsContent
+{
+    width: 100% !important;
+    display: flex !important;
+}
+.requirementsPContent
+{
+    float: left !important;
+    color: rgba(255, 217, 0, 0.746) !important;
+    font-weight: lighter !important;
+    display: list-item !important;
+}
+.requirementsPTitle
+{
+    float: right !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.doubleTitle
+{
+    float: right !important;
+    vertical-align: middle !important;
+}
+.divReqTitle
+{
+    width: 35% !important;
+    border-right: 5px solid gold;
+    border-radius: 0px !important;
+}
+.divReqContent
+{
+    width: 65% !important;
+}
+.requirementsPTitle
+{
+    color: gold !important;
+    font-size: 30px !important;
+    font-weight: lighter !important;
+}
+.requirementsSpan
+{
+    color: white !important;
+}
+.requirementsPTitleWhite
+{
+    color: white !important;
+    margin-top: -15px !important;
+}
+.contentTitle2
+{
+    font-size: 60px !important;
+    margin-top: -60px !important;
+}
+.contentTitleSub2
+{
+    width: 100% !important;
+}
+.contentTitleSub2 h4
+{
+    float: right !important;
+    color: gold !important;
+    font-style: normal !important;
+}
+.contentTitleSub2 .contentTitle2Span
+{
+    float: right !important;
+    color: white !important;
+    font-style: normal !important;
+    font-size: 60px !important;
+    margin-top: -40px !important;
+}
+.contentTitleSub2 .contentTitle3{
+    display: flex !important;
+    justify-content: end !important;
+    width: 100% !important;
+}
+.contentTitleSub2 .contentTitle3 p{
+    color: gold !important;
+    margin-top: -10px !important;
+}
+.equivalentTitle
+{
+    width: 70% !important;
+}
+.equivalentSub
+{
+    color: gold !important;
+    font-size: 28px !important;
+    text-align: center !important;
+    font-weight: lighter !important;
+}
+.tables
+{
+    width: 60% !important;
+    font-size: 20px !important;
+    color: white !important;
+}
+.tables td, th
+{
+    border: 1px solid rgba(255, 217, 0, 0.582);
+    padding: 15px !important;
+}
+.tables th , td:last-child
+{
+    text-align: center !important;
+}
+.titleTable
+{
+    width: 100% !important;
+}
+.titleLevel
+{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.titleLevel span
+{
+    width: 100% !important;
+}
+@media only screen and (max-width: 600px) {
+    .contentTitleSub h4
+    {
+        font-size: 30px !important;
+    }
+    .contentTitleSub span
+    {
+        font-size: 12px !important;
+    }
+    .requirementsPTitle
+    {
+        font-size: 20px !important;
+    }
+    .divReqContent
+    {
+        margin-left: 20px !important;
+    }
+    .requirementsPContent
+    {
+        font-size: 13px !important;
+        text-align: justify;
+    }
+    .divReqTitle
+    {
+        padding-right: 10px !important;
+        zoom: 0.9 !important;
+    }
+    .contentTitleSub2 h4
+    {
+        font-size: 30px !important;
+        margin-top: -30px !important;
+    }
+    .contentTitleSub2 .contentTitle2Span
+    {
+        font-size: 30px !important;
+        margin-top: -30px !important;
+    }
+    .contentTitleSub2 .contentTitle3 p
+    {
+        font-size: 12px !important;
+    }
+    .equivalentSub{
+        font-size: 16px !important;
+    }
+    .equivalentTitle
+    {
+        width: 100% !important;
+    }
+    table th, table tr td
+    {
+        font-size: 16px !important;
+    }
+    .tables
+    {
+        width: 100% !important;
+    }
+    .contentTitleSub2
+    {
+        margin-top: 20px !important;
+    }
+    .subTitle, .titleEosr
+    {
+        margin-top: 0px !important;
+        right: 10px !important;
+    }
+    .subTitle
+    {
+        font-size: 30px !important;
+        margin-top: 130px !important;
+    }
+}

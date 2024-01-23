@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.news{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+section.newsPageMLBB.top{
+    height: auto;
+    width: 100%;
+    background: 
+        linear-gradient(black 0%, transparent),
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/LandingBG.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.newsContainerTop{
+    height: auto;
+    width: 100%;
+    padding: 7vw 10%;
+    padding-bottom: 3vw;
+}
+.newsContainerTop h4{
+    font-family: 'Kanit', sans-serif;
+    font-size: 5vw;
+    line-height: 3vw;
+    font-style: italic;
+}
+.highlightNews{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 0;
+}
+.highlightNews video{
+    height: 25vw;
+    border-radius: 1vw;
+    box-shadow:  0 0 20px gray;
+    animation: fade-in-left 3000ms ease;
+}
+.updateTitle{
+    height: auto;
+    width: 40%;
+    animation: fade-in-right 3000ms ease;
+}
+.updateTitle div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.updateTitle div img{
+    height: 12vw;
+}
+.updateTitle h5{
+    font-size: 1.2vw;
+    margin: 3% 0;
+}
+.updateTitle p{
+    margin-bottom: 5%;
+}
+.updateTitle button{
+    padding: 0.5vw 2vw;
+    background: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.updateTitle button h6{
+    margin-bottom: 0;
+}
+.updateTitle button:hover{
+    opacity: 100%;
+    box-shadow: 0 0 10px white;
+    transition: 400ms ease;
+}
+
+
+
+section.newsPageMLBB.mid{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+}
+.newsContainerMid1{
+    height: auto;
+    width: 100%;
+    padding: 3vw 10%;
+    padding-bottom: 15vw;
+}
+.allNews{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 2% 0;
+}
+.allNews{
+    text-decoration: none;
+    margin: 2%;
+}
+.allNews a{
+    height: auto;
+    width: 31%;
+    margin: 1%;
+}
+.nContent{
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.nContent:hover{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px gray;
+    transition: 400ms ease;
+}
+.nContent img{
+    width: 100%;
+    border-radius: 0.5vw;
+}
+.nContent h6{
+    margin: 3% 0;
+}
+.nContent p{
+    font-size: 0.7vw;
+    color: gray;
+    text-align: right;
+}
+.videoTag{
+    height: 25vw;
+    border-radius: 1vw;
+    box-shadow:  0 0 20px gray;
+    animation: fade-in-left 3000ms ease;
+}
+.titleImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.titleImage img{
+    height: 12vw;
+}
+.readmore {
+    font-size: 13px;
+}
+@media only screen and (max-width: 600px) {
+    .newsContainerTop h4{
+        margin-top: 25%;
+        font-size: 40px !important;
+    }
+    .updateTitle{
+        width: 100%;
+      
+    }
+    .highlightNews{
+        margin-top: 20px !important;
+    }
+    .videoTag{
+        height: 40vw !important;
+    }
+    .boboCssH6{
+        font-size: 16px;
+    }
+    .boboCssH4s{
+        margin-bottom: -50px !important;
+    }
+
+}

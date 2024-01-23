@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.pap{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+    background: url('../assets/MLBB_Landing_Assets/M5bg2.png') no-repeat center;
+    background-size: cover;
+}
+.m5Container.register{
+    height: 100%;
+    width: 100%;
+    padding: 5vw 10%;
+    padding-bottom: 4vw;
+    position: relative;
+    overflow: hidden;
+}
+.m5LogoContent{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 8%;
+}
+.m5LogoContent img{
+    height: 6vw;
+    position: relative;
+    z-index: 5;
+}
+.m5RegistrationContent{
+    height: auto;
+    width: 100%;
+}
+.m5RegistrationContent img#bren{
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    height: 25vw;
+}
+.m5RegistrationContent img#echo{
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+    height: 35vw;
+}
+.m5RegistrationContent img#blacklist{
+    position: absolute;
+    top: 5%;
+    right: -20%;
+    height: 40vw;
+}
+.m5RegistrationContent img#yuzhong{
+    position: absolute;
+    bottom: -20%;
+    right: -35%;
+    height: 45vw;
+}
+.m5RegistrationForm{
+    height: 100%;
+    width: 100%;
+    padding: 0 25%;
+    position: relative;
+}
+.m5RegistrationForm form{
+    height: 100%;
+    width: 100%;
+}
+.m5RegForm{
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 100px black;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 5% 15%;
+    padding-top: 15%;
+}
+.m5RegForm h4{
+    text-align: center;
+    color: goldenrod;
+    font-size: 1.5vw;
+}
+.m5RegFormContent{
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+.m5RegFormContent span{
+    height: auto;
+    width: 100%;
+}
+.m5RegFormContent span.hiddenInputs{
+    display: none;
+}
+.m5RegFormContent span label p{
+    font-size: 0.7vw;
+    margin: 1% 0;
+    margin-top: 2%;
+}
+.m5RegFormContent span input{
+    width: 100%;
+    padding: 0.5vw 1vw;
+    border-radius: 50px;
+    border: none;
+}
+.m5RegFormContent span select{
+    width: 100%;
+    padding: 0.5vw 1vw;
+    /* padding-right: 0; */
+    border-radius: 50px;
+    border: none;
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    -moz-appearance: none; /* Firefox */
+    appearance: none;
+}
+.m5RegFormContent span select::-ms-expand {
+    display: none;
+}
+.m5RegFormContent span#submitForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m5RegFormContent span#submitForm input{
+    width: 40%;
+    margin-top: 5%;
+    font-weight: 700;
+}
+.m5RegFormContent span#submitForm input:hover{
+    color: white;
+    background: goldenrod;
+    transition: 400ms ease;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .m5LogoContent img{
+        height: 40vw;
+        position: relative;
+        z-index: 7;
+    }
+    .m5RegistrationContent img#bren{
+        position: absolute;
+        top: 35%;
+        left: -80%;
+        height: 100vw;
+        z-index: 2;
+    }
+    .m5RegistrationContent img#echo{
+        position: absolute;
+        bottom: -20%;
+        left: -70%;
+        height: 120vw;
+        z-index: 3;
+    }
+    .m5RegistrationContent img#blacklist{
+        position: absolute;
+        top: 35%;
+        right: -100%;
+        height: 150vw;
+        z-index: 1;
+    }
+    .m5RegistrationContent img#yuzhong{
+        display: none;
+    }
+    .m5RegistrationForm{
+        padding: 40% 0;
+        padding-bottom: 20%;
+        z-index: 5;
+    }
+    .m5RegForm{
+        padding: 0 8%;
+        padding-top: 30%;
+    }
+    .m5RegForm h4{
+        text-align: center;
+        color: goldenrod;
+        font-size: 3.5vw;
+    }
+    .m5RegFormContent span label p{
+        font-size: 3vw;
+        margin: 1% 0;
+        margin-top: 2%;
+    }
+    .m5RegFormContent span input{
+        width: 100%;
+        padding: 2vw 3vw;
+        font-size: 3vw;
+    }
+    .m5RegFormContent span select{
+        width: 100%;
+        padding: 2vw 3vw;
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+a{
+    text-decoration: none;
+}
+a .aHover{
+    transition: ease-in-out 0.5s;
+   
+}
+a .aHover:hover{
+    font-size: 1.10vw;
+    text-shadow: 2px 2px 5px #F4C251;
+}
+
+.aHover .campuses{
+    transition: ease-in-out 0.5s;
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+   
+}
+.aHover .campuses:hover{
+    font-size: 1.10vw;
+    text-shadow: 2px 2px 5px #F4C251;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, .p{
+    color: white;
+}
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+.p{
+    font-size: 1vw;
+}
+.h1{
+    font-size: 10vw;
+}
+.h2{
+    font-size: 5vw;
+}
+.h3{
+    font-size: 4vw;
+}
+.h4{
+    font-size: 2vw;
+}
+.h5{
+    font-size: 1.5vw;
+}
+.h6{
+    font-size: 15px;
+}
+
+.luzon{
+    fill: #0032A0;
+
+}
+.visayas{
+    fill: #FED141;
+  
+}
+.mindanao{
+    fill: #BF0D3E;
+ 
+}
+.mainContainer.campus{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.maphover{
+    fill: rgb(243, 243, 243);
+    transition: ease-in-out 1s;
+}
+.maphover:hover{
+    fill: aqua !important;
+}
+.mapActive{
+    fill: aqua !important;
+    transition: ease-in-out 0s !important;
+}
+section.campusPageMLBB.top{
+    height: 100vh;
+    width: 100%;
+    background: 
+        linear-gradient(black 0%, transparent),
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/LandingBG.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.cpContentTop{
+    height: 100%;
+    width: 100%;
+    padding: 8vw 5%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.cpContentTop h5{
+    text-align: left;
+    font-style: italic;
+    font-size: 1vw;
+    animation: fade-in-left 2500ms ease;
+}
+.cpContentTop span{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    animation: fade-in-left 2000ms ease;
+}
+.cpContentTop h2{
+    font-size: 10vw;
+    line-height: 8vw;
+}
+.cpContentTop h6{
+    line-height: 1vw;
+}
+.cpContentTop h3{
+    font-family: 'Kanit', sans-serif;
+    font-size: 4vw;
+    line-height: 3vw;
+    font-style: italic;
+    text-align: left;
+    margin-left: 5%;
+}
+.cpContentTop img#mlBBSun{
+    position: absolute;
+    height: 65vw;
+    right: -20%;
+    top: -20%;
+    opacity: 10%;
+    z-index: 0;
+}
+.mapNavigation{
+    height: auto;
+    width: 100%;
+}
+.mapNavigation img#phMap{
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    z-index: 2;
+    height: 45vw;
+    opacity: 50%;
+}
+.mapNavigation svg{
+    transform: scale(0.7);
+    z-index: 2;
+    position: absolute;
+    top: -250px;
+    height: 100vw;
+    width: 100vw;
+}
+.mapNavigation img.mapParts{
+    height: 45vw;
+    transition: 400ms ease;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    z-index: 4;
+    animation: fade-in 400ms linear;
+}
+.mapNavigation img.mapParts.enable{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+.mapNavigation button{
+    padding: 0.5vw;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 5;
+}
+.mapNavigation button#luzonBtn{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+.mapNavigation button#visayasBtn{
+    position: absolute;
+    top: 43%;
+    right: 2%;
+}
+.mapNavigation button#mindanaoBtn{
+    position: absolute;
+    top: 75%;
+    right: 17%;
+}
+.campusNavContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 1% 0;
+}
+.campusNavContainer button{
+    background: none;
+    border: none;
+    padding: 0.5vw;
+    margin-right: 5%;
+    cursor: pointer;
+    opacity: 30%;
+}
+.campusNavContainer button:hover{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+.campusNavContainer button.active{
+    border-bottom: solid 1px white;
+    opacity: 100%;
+}
+.chapterCampuses{
+    height: auto;
+    width: 55%;
+    text-align: left;
+    animation: fade-in-left 2000ms ease;
+}
+.chapterCampuses h4{
+    margin: 1% 0;
+}
+.chapterCampuses .allCampus{
+    height: 20vw;
+    direction: rtl;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.allCampus::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: gray;
+    opacity: 50%;
+}
+
+.allCampus::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: gray;
+    border-radius: 10px;
+}
+
+.allCampus::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #363636;
+}
+.allCampus h6{
+    margin: 1%;
+    margin-left: 2%;
+}
+.campusList{
+
+}
+@media only screen and (max-width: 600px) {
+
+    .mapNavigation{
+        display: none;
+    }
+    .headTitle{
+        margin-top: 50px;
+    }
+    .h6{
+        font-size: 13px;
+    }
+    .chapterCampuses{
+        height: auto;
+        width: 100%;
+        /* text-align: left; */
+        animation: fade-in-left 2000ms ease;
+    }
+    .chapterCampuses .allCampus{
+        height: 100vw;
+    
+    }
+    .aHover{
+        font-size: 13px;
+        
+    }
+    .campuses{
+        margin-right: 5px;
+    }
+    /* .mobileTitle
+    {
+        zoom: 2 !important;
+    }
+    h4
+    {
+        font-size: 30px !important;
+    }
+    h5{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 16px !important;
+        color: #c7c5c5 !important;
+    }
+    .mobileSub
+    {
+        zoom: 2;
+        margin-top: 2px;
+    }
+    .mobileTitle1{
+        zoom: 1.5;
+        margin-top: 10px;
+    } */
+}

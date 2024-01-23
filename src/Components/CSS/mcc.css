@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Edu SA Beginner', cursive; */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bruno Ace SC', cursive;
+}
+p{
+    font-size: 1vw;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 2vw;
+}
+h5{
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+
+.mainContainer.mcc{
+    height: auto;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+section.mccContainer{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10vw;
+}
+.mccContent.top{
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: 
+        /* linear-gradient(black 0%, transparent), */
+        linear-gradient(transparent, black 100%),
+        url('../assets/MLBB_Landing_Assets/mccBanner01.png') no-repeat center;
+    background-size: cover;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    z-index: 5;
+}
+.mccContent.top img{
+    height: 15vw;
+    text-align: center;
+}
+.mccContent.top img#extraLogo{
+    position: absolute;
+    top: 40%;
+    left: -25%;
+    height: 50vw;
+    opacity: 30%;
+    z-index: 1;
+    filter: blur(5px);
+}
+.mccContent.nav{
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.mccContent.nav button{
+    margin: 0 1%;
+    background: none;
+    outline: none;
+    border: none;
+    opacity: 30%;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+.mccContent.nav button.active{
+    opacity: 100%;
+    border-bottom: solid 1px white;
+}
+.mccContent.nav button.disabled{
+    cursor: not-allowed;
+}
+.mccContent.nav button:hover{
+    opacity: 100%;
+    transition: 400ms ease;
+}
+
+
+.mccContent.overview{
+    height: auto;
+    width: 100%;
+    padding: 0 12%;
+    position: relative;
+    z-index: 5;
+    animation:  fade-in-left 800ms ease;
+}
+.mccContent.overview p span{
+    margin-right: 5%;
+}
+.mccContent.overview h5{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.mccContent.overview img{
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 2vw;
+}
+
+
+
+.mccContent.rulebook{
+    height: auto;
+    width: 100%;
+    padding: 0 12%;
+    position: relative;
+    z-index: 5;
+    animation:  fade-in-left 800ms ease;
+}
+.mccContent.rulebook p span{
+    margin-right: 5%;
+}
+.mccContent.rulebook h5{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.mccContent.rulebook ul{
+    padding: 0 3%;
+}
+.mccContent.rulebook ul li{
+    margin: 1% 3%;
+}
+.mccContent.rulebook img{
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 2vw;
+}
